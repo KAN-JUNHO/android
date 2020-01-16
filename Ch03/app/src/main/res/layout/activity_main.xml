@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--1.Textview-->
+        <TextView style="@style/txtv_tit" android:text="1.Textview"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Text 크기 12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Text 크기 18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Text 크기 24sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:text="Text 생삭 #FF0000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF00"
+            android:text="Text 생삭 #00FF00"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000FF"
+            android:text="Text 생삭 #0000FF"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000FF"
+            android:text="Text 배경색상 #0000FF"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FF00"
+            android:text="Text 배경색상 #00FF00"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="Text 배경색상 #FF0000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Text invisible"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="gone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:text="Text width"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:text="010-1234-5678"
+            />
+
+        <!--2.Button-->
+        <TextView style="@style/txtv_tit" android:text="2.Button"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼1"
+        />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼2"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="버튼3"/>
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="버튼4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btn5Listener"
+                android:text="버튼5"/>
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btn6Listener"
+                android:text="버튼6"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="버튼7"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_done"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_bg_pressed"
+            android:text="버튼9"
+            />
+
+        <!--3.EditView-->
+        <TextView style="@style/txtv_tit" android:text="3.EditView"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/edt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D1D1D1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="이름 입력"
+            />
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입력완료"
+            />
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입력내용 출력"
+            />
+
+        <!--4.ImageView-->
+        <TextView style="@style/txtv_tit" android:text="4.ImageView"/>
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@drawable/sample_100"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sample_100"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sample_100"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#333FFF"
+            android:src="@drawable/frozen_118"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#A7FFEB"
+            android:src="@drawable/frozen_980"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFF8D"
+            android:src="@drawable/frozen_1115"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/frozen_1115"
+            />
+
+        <!--5.CheckBox-->
+        <TextView style="@style/txtv_tit" android:text="5.CheckBox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취미를 선택하세요."/>
+        <CheckBox
+            android:id="@+id/chk_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkListener"
+            android:text="등산"/>
+        <CheckBox
+            android:id="@+id/chk_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkListener"
+            android:text="영화"/>
+        <CheckBox
+            android:id="@+id/chk_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkListener"
+            android:text="게임"/>
+        <CheckBox
+            android:id="@+id/chk_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkListener"
+            android:text="운동"/>
+        <CheckBox
+            android:id="@+id/chk_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkListener"
+            android:text="독서"/>
+        <Button
+            android:id="@+id/btn_hobby_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--6.Switch-->
+        <TextView style="@style/txtv_tit" android:text="6.Switch"/>
+
+        <Switch
+            android:id="@+id/swt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스위치 꺼짐"
+            android:switchPadding="16dp"
+            android:thumbTint="#ff0000"
+            android:trackTint="#565656"
+
+            />
+
+        <!--7.Spiner-->
+        <TextView style="@style/txtv_tit" android:text="7.Spiner"/>
+        <Spinner
+            android:id="@+id/spnn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/cities"
+            />
+        <Spinner
+            android:id="@+id/spnn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:entries="@array/animal"
+            />
+
+    </LinearLayout>
+</ScrollView>

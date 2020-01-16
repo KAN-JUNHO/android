@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="수행 평가 4번문제"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:text="로그인"
+            android:textSize="40dp"
+            android:textFontWeight="1dp" />
+
+        <TextView
+            android:id="@+id/id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_text"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:text="아이디" />
+
+        <EditText
+            android:id="@+id/id_input"
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_text"
+            android:layout_toRightOf="@id/id_text" />
+
+        <TextView
+            android:id="@+id/pass_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/id_text"
+            android:layout_toLeftOf="@id/id_input"
+            android:text="비밀번호"
+
+            />
+
+        <EditText
+            android:id="@+id/pass_input"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/id_text"
+            android:layout_alignEnd="@id/id_input"
+            />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass_input"
+            android:layout_alignEnd="@id/pass_input"
+            android:text="로그인"/>
+    </RelativeLayout>
+</LinearLayout>
