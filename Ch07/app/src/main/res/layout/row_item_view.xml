@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txt_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 출력"
+            />
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름 출력"
+            />
+        <TextView
+            android:id="@+id/txt_hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="휴대폰 출력"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txt_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="직급 출력"
+            />
+        <TextView
+            android:id="@+id/txt_dep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="부서 출력"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="삭제"/>
+
+
+</LinearLayout>
