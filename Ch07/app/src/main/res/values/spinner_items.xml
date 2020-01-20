@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pos">
+        <item>직급선택</item>
+        <item>사원</item>
+        <item>대리</item>
+        <item>과장</item>
+        <item>차장</item>
+        <item>부장</item>
+    </string-array>
+
+    <string-array name="dep">
+        <item>부서선택</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+    </string-array>
+
+</resources>

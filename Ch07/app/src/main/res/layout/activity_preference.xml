@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안드로이드 Preference 실습하기"/>
+
+    <!-- 아이디 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        />
+    <EditText
+        android:id="@+id/edt_uid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="아이디 입력"
+        />
+
+    <!-- 이름 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        />
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="이름 입력"
+        />
+
+    <!-- 휴대폰 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="휴대폰"
+        />
+    <EditText
+        android:id="@+id/edt_hp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="휴대폰 입력"
+        />
+
+    <!-- 직급 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="직급"
+        />
+
+    <Spinner
+        android:id="@+id/spnn_pos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/pos"
+        />
+
+    <!-- 부서 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="부서"
+        />
+    <Spinner
+        android:id="@+id/spnn_dep"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/dep"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장하기"
+        />
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

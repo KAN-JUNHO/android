@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프레퍼런스 설정값 확인하기"/>
+    <TextView
+        android:id="@+id/txt_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"/>
+
+    <TextView
+        android:id="@+id/txt_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="휴대폰"/>
+
+    <TextView
+        android:id="@+id/txt_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="직급"/>
+    <TextView
+        android:id="@+id/txt_dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="부서"/>
+</LinearLayout>
